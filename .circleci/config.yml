@@ -10,8 +10,21 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
+ test-job:
+   steps:
+     -checkout
+     -run:
+       name: setup Python
+       command:
+         pip install -r requirements.txt
+     -run:
+       name: Test1
+       command:
+         python tests\test_pdf.py
+
 
 workflows:
   my-workflow:
     jobs:
       - hello-job
+      - test-job
