@@ -19,6 +19,10 @@ jobs:
     steps:
       - checkout
       - run:
+         name: setup Python  
+         command:
+           pip install -r requirements.txt
+      - run:
          name: Test1
          command:
            python tests\test_pdf.py
