@@ -8,7 +8,6 @@ jobs:
       - image: cimg/python:3.10.5 # the primary container, where your job's commands are run
     steps:
       - checkout
-      - run: brew install pyenv
       - python/install-packages:
           pkg-manager: pip
           pip-dependency-file: requirements.txt
