@@ -4,9 +4,6 @@ import unittest
 import numpy
 import sys
 
-working_directory=sys.path[1].replace('\\tests','')
-sys.path.append(working_directory)
-
 try:
     from splrand.pdf import ProbabilityDensityFunction
 except ModuleNotFoundError:
