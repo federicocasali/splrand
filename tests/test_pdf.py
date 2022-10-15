@@ -7,8 +7,10 @@ import sys
 working_directory=sys.path[1].replace('\\tests','')
 sys.path.append(working_directory)
 
-from splrand.pdf import ProbabilityDensityFunction
-
+try:
+    from splrand.pdf import ProbabilityDensityFunction
+except ModuleNotFindError:
+    print(sys.path)
 class TestProbabilityDensityFunction(unittest.TestCase):
 
     def test_norm(self):
