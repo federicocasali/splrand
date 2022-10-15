@@ -9,7 +9,8 @@ sys.path.append(working_directory)
 
 try:
     from splrand.pdf import ProbabilityDensityFunction
-except ModuleNotFoundError:
+except ModuleNotFoundError as e:
+    print(e)
     print(sys.path)
 class TestProbabilityDensityFunction(unittest.TestCase):
 
