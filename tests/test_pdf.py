@@ -3,7 +3,10 @@
 import unittest
 import numpy
 import sys
-print(sys.path)
+
+working_directory=sys.path[1].replace('\\tests','')
+sys.path.append(working_directory)
+
 from splrand.pdf import ProbabilityDensityFunction
 
 class TestProbabilityDensityFunction(unittest.TestCase):
