@@ -2,7 +2,8 @@
 """
 import unittest
 import numpy
-
+import sys
+print(sys.path)
 from splrand.pdf import ProbabilityDensityFunction
 
 class TestProbabilityDensityFunction(unittest.TestCase):
