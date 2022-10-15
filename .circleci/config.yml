@@ -17,10 +17,9 @@ jobs:
       - image: cimg/python:3.10.5 # the primary container, where your job's commands are run
     steps:
       - checkout
-      - run:
-         name: setup Python  
-         command:
-           pip install -r requirements.txt
+      - python/install-packages:
+          pkg-manager: pip
+          pip-dependency-file: requirements.txt
       - run:
          name: Test1
          command:
