@@ -14,7 +14,7 @@ jobs:
       - run:
          name: Test1
          command:
-           python tests\test_pdf.py
+           python tests/test_pdf.py
 
 
 workflows:
