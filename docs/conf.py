@@ -31,5 +31,5 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_static_path = []
+html_static_path = ['html/_static']
 print([x[0] for x in os.walk(sys.path[1])])
