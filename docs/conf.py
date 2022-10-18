@@ -15,7 +15,7 @@ release = '0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 import pathlib
 import sys
-sys.path.insert(0, pathlib.Path(__file__).parents[1].resolve().as_posix())
+sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 for i,line in enumerate(sys.path):
     print(f'{i} {line}')
 
