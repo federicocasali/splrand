@@ -32,4 +32,4 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'alabaster'
 html_static_path = []
-print([x[0] for x in os.walk(sys.path[0])])
+print([x[0] for x in os.walk(sys.path[1])])
