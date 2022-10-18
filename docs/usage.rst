@@ -17,4 +17,4 @@ Classes and methods
 -------------------
 
 .. autoclass:: splrand.pdf.ProbabilityDensityFunction
-   :members:
+   :members: prob, rnd
