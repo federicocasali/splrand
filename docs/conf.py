@@ -15,6 +15,7 @@ release = '0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 import pathlib
 import sys
+import os
 sys.path.insert(0, pathlib.Path(__file__).parents[1].resolve().as_posix())
 for i,line in enumerate(sys.path):
     print(f'{i} {line}')
@@ -31,3 +32,4 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'alabaster'
 html_static_path = []
+print([x[0] for x in os.walk(sys.path[0])])
