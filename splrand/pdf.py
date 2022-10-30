@@ -1,3 +1,5 @@
+""" Module to compute probability density functions
+"""
 import numpy
 from scipy.interpolate import InterpolatedUnivariateSpline
 
